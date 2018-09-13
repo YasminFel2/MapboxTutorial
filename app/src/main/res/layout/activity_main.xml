@@ -13,4 +13,15 @@
         mapbox:mapbox_cameraTargetLng="-77.0295"
         mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
         mapbox:mapbox_cameraZoom="12" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5px"
+        android:layout_margin="20px"
+        android:text="Start navigation"
+        android:background="@color/mapboxGrayLight"
+        android:textColor="@color/mapboxWhite"
+        android:enabled="false"/>
 </RelativeLayout>
