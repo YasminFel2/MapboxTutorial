@@ -1,5 +1,6 @@
 package com.example.jasmin.mapboxtutorial;
 
+import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -8,6 +9,8 @@ import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
 
+import java.util.List;
+
 // classes needed to initialize map
 // classes needed to add location layer
 // classes needed to add a marker
@@ -15,7 +18,7 @@ import com.mapbox.mapboxsdk.maps.MapView;
 // classes needed to launch navigation UI
 
 
-public abstract class NavigationActivity extends AppCompatActivity implements LocationEngineListener, PermissionsListener {
+public class NavigationActivity extends AppCompatActivity implements LocationEngineListener, PermissionsListener {
 
 
     private MapView mapView;
@@ -74,5 +77,25 @@ public abstract class NavigationActivity extends AppCompatActivity implements Lo
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onConnected() {
+
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+
+    }
+
+    @Override
+    public void onExplanationNeeded(List<String> permissionsToExplain) {
+
+    }
+
+    @Override
+    public void onPermissionResult(boolean granted) {
+
     }
 }
