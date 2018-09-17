@@ -168,6 +168,10 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
 
                         destinationPosition = Point.fromLngLat(destinationCoord.getLongitude(), destinationCoord.getLatitude());
                         originPosition = Point.fromLngLat(originCoord.getLongitude(), originCoord.getLatitude());
+
+                        Log.d("Position",originCoord.getLongitude() + " " + originCoord.getLatitude());
+                        Log.d("Position", destinationCoord.getLongitude() + " " + destinationCoord.getLatitude());
+
                         getRoute(originPosition, destinationPosition);
 
 
