@@ -151,9 +151,9 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
                 enableLocationPlugin();
 
              //   original code:
-             //   originCoord = new LatLng(originLocation.getLatitude(), originLocation.getLongitude());
+                originCoord = new LatLng(originLocation.getLatitude(), originLocation.getLongitude());
 
-                originCoord = new LatLng(-34, -34);
+            //    originCoord = new LatLng(-34, -34);
                 mapboxMap.addOnMapClickListener(new MapboxMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng point) {
