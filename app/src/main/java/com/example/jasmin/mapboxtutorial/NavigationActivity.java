@@ -153,7 +153,6 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
              //   original code:
                 originCoord = new LatLng(originLocation.getLatitude(), originLocation.getLongitude());
 
-            //    originCoord = new LatLng(-34, -34);
                 mapboxMap.addOnMapClickListener(new MapboxMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng point) {
@@ -168,9 +167,6 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
 
                         destinationPosition = Point.fromLngLat(destinationCoord.getLongitude(), destinationCoord.getLatitude());
                         originPosition = Point.fromLngLat(originCoord.getLongitude(), originCoord.getLatitude());
-
-                        Log.d("Position",originCoord.getLongitude() + " " + originCoord.getLatitude());
-                        Log.d("Position", destinationCoord.getLongitude() + " " + destinationCoord.getLatitude());
 
                         getRoute(originPosition, destinationPosition);
 
