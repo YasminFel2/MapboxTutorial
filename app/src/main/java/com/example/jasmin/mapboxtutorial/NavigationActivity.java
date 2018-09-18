@@ -150,8 +150,10 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
                 map = mapboxMap;
                 enableLocationPlugin();
 
-             //   original code:
-                originCoord = new LatLng(originLocation.getLatitude(), originLocation.getLongitude());
+             //   original code does not work, I initialized with random point:
+            //    originCoord = new LatLng(originLocation.getLatitude(), originLocation.getLongitude());
+
+                originCoord = new LatLng(34, 34);
 
                 mapboxMap.addOnMapClickListener(new MapboxMap.OnMapClickListener() {
                     @Override
@@ -176,6 +178,8 @@ public class NavigationActivity extends AppCompatActivity implements LocationEng
 
 
                     }
+
+
 
                     ;
                 });

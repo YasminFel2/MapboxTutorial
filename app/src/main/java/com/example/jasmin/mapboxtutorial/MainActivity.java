@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
 
-        mapView.getMapAsync(new OnMapReadyCallback() {
+    /*    mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(MapboxMap mapboxMap) {
                 // One way to add a marker view
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         .snippet("Illinois")
                 );
             }
-        });
+        });*/
     }
 
     @Override
